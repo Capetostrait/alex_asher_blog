@@ -1,14 +1,19 @@
 StrongFriendsApp::Application.routes.draw do
 
+  get "users/new"
+
   root to: 'static_pages#home'
   
-  match '/contact',    to: 'static_pages#contact'
+  match '/contact',     to: 'static_pages#contact'
+  match '/signup',      to: 'users#new'
 
   # get "static_pages/contact"
-  match '/faq',        to: 'static_pages#faq'
+  match '/faq',         to: 'static_pages#faq'
   #get "static_pages/faq"
   
-  match '/about',    to: 'static_pages#about'
+  match '/about',       to: 'static_pages#about'
+  
+
   
   #get "static_pages/about"
   
