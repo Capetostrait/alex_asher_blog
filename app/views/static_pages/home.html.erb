@@ -1,0 +1,50 @@
+<head>
+    <title><%= full_title(yield(:title)) %></title>
+     <%= stylesheet_link_tag    "application", media: "all" %>
+     <%= javascript_include_tag "application" %>
+     <%= csrf_meta_tags %>
+     <!--[if lt IE 9]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+<div class="center hero-unit">
+  <h1>Wake Up Fit</h1>
+
+  <h2>Your goals don't stop at the end of the class</h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+</div>
+
+<div class="row">
+  <div class="span4">
+    <h2>Small Groups - Fun & Friendly</h2>
+    <p>Unlike many bootcamps, Wake Up Fit ensures you get the personal attention you deserve. I cap class sizes to a maximum of 10 people per class so that you can ask those questions, you don't feel "unnoticed" and you can get to meet the people in the group.
+  </div>
+  
+  <div class="span4">
+    <h2>Full of Fun & Variety</h2>
+    <p>Sorry to disappoint you - I'm not here to yell at you.  I'm here to motivate you, keep you on track and to give you a different workout every time.  Variety is the key to improving your fitness.  Your body adapts to challenge.  No challenge, no progress. 
+    </p>  
+  </div>
+  
+  <div class="span4">
+    <h2>Affordable Results</h2>
+    <p>Forget over-priced gyms that you hardly go to.  If you bring a friend with you to Wake Up Fit - it'll cost you only $99 for 6 weeks of interesting, different, fun workouts.
+      <form>
+        <legend><strong>Want to know when the next course starts?</strong></legend>
+        <label>Email Address</label>
+        <input class="input-xlarge" type="text" placeholder="example@example.com">
+        <label class="checkbox">
+          <input type="checkbox"> Want to receive news
+        </label>
+        
+        <button type="submit" class="btn" id="wow">Submit</button>
+      </form>
+    </p>
+        
+  </div>
+</div>
+
+<!--<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %> -->
+  
